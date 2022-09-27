@@ -18,7 +18,7 @@ def favorite_activities():
     # NOTE: Make sure to use an f-string so that the user knows which day they're being asked about.
     user_activities = []
     for day in days:
-        activity = input(f'What do you like to do on {day}s? ')
+        activity = input(f'What do you like to do on {day}? ')
         user_activities.append(activity)
     # We should keep track of the user's favorite things to do so that we can print them out all together.
     # 2.2 TODO: ABOVE your for loop, create a new empty list to hold the user's favorite activities.

@@ -10,7 +10,6 @@ def day_of_week():
     # 1.2 TODO: Write another for loop that does the same thing, but this time use the range function
     for x in range(len(days)):
         print(days[x])
-day_of_week()
 
 def favorite_activities():
     # 2.1 TODO: Now, in a for loop, instead of just printing out the day,
@@ -35,8 +34,7 @@ def favorite_activities():
     # Each time through this new loop, use the index number to index into each of your lists for the data
     # you need to print out.
     for day in range(len(days)):
-        print(f'On {day}s, your favorite activity is to {user_activities[day]}.')    
-favorite_activities()
+        print(f'On {days[day]}s, your favorite activity is to {user_activities[day]}.')    
 
 '''
    Take a look back at the code you just wrote. Look at how much it does!
@@ -67,17 +65,15 @@ def temp_by_day():
             print('Cozy, grab a sweater')
         else:
             print('Put on some sunscreen!')
-temp_by_day()
 
 def temp_by_day_continuous():
     # 4 TODO: Write a program that asks the user what temperature it is outside. While the temperature is below 65,
     # tell the user to wear a sweater. Once the temperature is over 65, stop looping, and tell the user that
     # Spring has sprung!
     temp = int(input('What is todays temp? '))
-    while temp < 65:
+    while temp <= 65:
         print('Wear a sweater')
         temp = int(input('What is todays temp? '))
     print('Spring has sprung!')
     # NOTE: remember, if you accidentally create an infinite while loop, it's ok! Go into the command line and
     # hit control + C to stop the program. No harm done to your computer (:
-temp_by_day_continuous()
